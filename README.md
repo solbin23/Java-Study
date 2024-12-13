@@ -14,10 +14,15 @@
   + 제네릭 메서드는 메서드를 실제 호출하는 시점에 다이아몬드를 사용해서 < Integer > 와 같이 타입을 정하고 호출한다.
 + **제네릭 타입 설정**
 
- +     class ComplexBox< T extends Animal >
+  +     class ComplexBox< T extends Animal >
 
 + **제네릭 메서드 설정**
 
   +     < T > T printAndReturn(T t)
   
 + 제네릭 타입보다 제네릭 메서드가 높은 우선순위를 가진다.
++ 결과
+
+      animal.className:generic.animal.Dog
+      t.className: generic.animal.Cat
+      returnCat = Animal{name='야옹이', size=50}    
