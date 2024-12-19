@@ -93,6 +93,7 @@ public class MyLinkedList<E> implements MyList<E> {
         return -1; //못찾으면 -1 반환
     }
 
+    @Override
     public int size(){
         return size;
     }
