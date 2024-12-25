@@ -6,7 +6,7 @@ public class HashAndEqualsMain3 {
 
     public static void main(String[] args) {
 
-        //중복 등록
+        //중복 등록 안됨
         MyHashSetV2 set = new MyHashSetV2(10);
         Member m1 = new Member("A");
         Member m2 = new Member("A");
