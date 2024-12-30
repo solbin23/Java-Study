@@ -417,3 +417,13 @@ Map과 Set은 거의 같다.
 + **특징** : 모든 키는 자연 순서 또는 생성자에 제공된 Comparator에 의해 정렬된다.
 + **성능** : get, put, remove와 같은 주요 작업들은 O(log n)의 시간 복잡도를 가진다.
 + **순서** : 키는 정렬된 순서로 저장된다.
+
+---
+
+### 스택 자료 구조
+
+<img height="400" src="/Users/hongsolbin/Desktop/stack.png" width="400"/></img>
+
+**후입 선출(LIFO, Last In First Out)**
+
+나중에 넣은 것이 가장 먼저 나오는 것을 후입 선출이라 하고, 이런 자료구조를 스택이라고 한다.
