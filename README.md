@@ -427,3 +427,18 @@ Map과 Set은 거의 같다.
 **후입 선출(LIFO, Last In First Out)**
 
 나중에 넣은 것이 가장 먼저 나오는 것을 후입 선출이라 하고, 이런 자료구조를 스택이라고 한다.
+
+---
+
+### 큐 자료 구조
+
+**선입 선출(FIFO, First In First Out)**
+
+![Queue](./src/img/Queue.png)
+
+후입 선출과 반대로 가장 먼저 넣은 것이 가장 먼저 나오는 것을 선입 선출이라 한다. 이런 자료 구조를 큐(Queue)라 한다.
+
++ Queue 인터페이스는 List,Set과 같이 Collection의 자식이다.
++ Queue의 대표적인 구현체는 ArrayDeque, LinkedList가 있다.
+
+---
