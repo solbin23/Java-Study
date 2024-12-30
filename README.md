@@ -422,7 +422,7 @@ Map과 Set은 거의 같다.
 
 ### 스택 자료 구조
 
-<img height="400" src="/Users/hongsolbin/Desktop/stack.png" width="400"/></img>
+![stack](./src/img/stack.png)
 
 **후입 선출(LIFO, Last In First Out)**
 
