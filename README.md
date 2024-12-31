@@ -442,3 +442,18 @@ Map과 Set은 거의 같다.
 + Queue의 대표적인 구현체는 ArrayDeque, LinkedList가 있다.
 
 ---
+
+### Deque 자료 구조
+
+**Double Ended Queue의 약자**
+
+![Deque](./src/img/deque.png)
+
+Deque는 양쪽 끝에서 요소를 추가하거나 제거할 수 있다.
+
+Deque는 일반적인 큐(Queue)와 스택(Stack)의 기능을 모두 포함하고 있어 매우 유연한 자료 구조이다.
+
+**Deque의 대표적인 구현체는 ArrayDeque, LinkedList가 있다.**
+
+---
+
