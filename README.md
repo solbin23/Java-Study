@@ -485,4 +485,24 @@ public interface Iterator<E> {
 + hasNext(): 다음 요소가 있는지 확인한다. 다음 요소가 없으면 false를 반환한다.
 + next(): 다음 요소를 반환한다. 내부에 있는 위치를 다음으로 이동한다.
 
+---
 
+### Arrays.asList()
+```
+List<Integer> list = Arrays.asList(1,2,3);
+List<Integer> list = List.of(1,2,3);
+```
+
++ Arrays.asList()로 생성되는 리스트는 **고정된 크기를 가지지만, 요소들은 변경할 수 있다.** 즉, 리스트의 길이는 변경할 수 없지만, 기존 위치에 있는 요소들을 다른 요소로 교체할 수 있다.
+  + set()을 통해 요소를 변경할 수 있다.
+  + add(), remove() 같은 메서드를 호출하면 에외가 발생한다. 크기를 변경할 수 없다.
+    + java.lang.UnsupportedOperationException 발생
+  + 고정도 가변도 아닌 애매한 리스트이다.
+
+**정리**
+
+일반적으로 List.of()를 사용하는 것을 권장
+
+다음과 같은 경우 Arrays.asList() 를 선택할 수 있다.
++ **변경 가능한 요소** : 리스트 내부의 요소를 변경해야 하는 경우(단, 리스트의 크기는 변경할 수 없음)
++ **하위 호환성** : Java9이전 버전에서 작업해야 하는 경우
