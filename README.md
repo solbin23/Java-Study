@@ -541,3 +541,21 @@ Collection은 Map을 제외한 모든 컬렉션 타입의 부모이다. 모든 �
 
 데이터를 단순히 순회할 목적이라면 Collection을 사용하면 모든 컬렉션 타입의 데이터를 순회할 수 있음
 
+### 인터페이스
+
++ **Collection**: 단일 루트 인터페이스, 모든 컬렉션 클래스가 상속받는다.
+  + List, Set, Queue 등의 인터페이스가 여기에 포함됨
++ **List**: 순서가 있는 컬렉션을 나타내며, 중복 요소를 허용함. 인덱스를 통해 요소에 접근할 수 있음
+  + ArrayList, LinkedList
++ **Set**: 중복 요소를 허용하지 않는 컬렉션을 나타냄. 특정 위치가 없기 때문에 인덱스를 통해 요소에 접근할 수 없다.
+  + HashSet, LinkedHashSet, TreeSet
++ **Queue**: 요소가 처리되기 전에 보관되는 컬렉션을 나타냄
+  + ArrayDeque, LinkedList, PriorityQueue
++ **Map**: 키와 값 쌍으로 요소를 저장하는 객체. Map은 Collection 인터페이스를 상속받지 않음
+  + HashMap, LinkedHashMap, TreeMap
+
+### 구현
++ **List**: ArrayList는 내부적으로 배열을 사용하며, LinkedList는 연결 리스트를 사용함
++ **Set**: HashSet은 해시 테이블, LinkedHashSet은 해시 테이블과 연결 리스트를, TreeSet은 레드-블랙 트리를 사용함
++ **Map**: HashMap은 해시 테이블, LinkedHashMap은 해시 테이블과 연결 리스트를, TreeMap은 레드-블랙 트리를 사용함
++ *Queue**: LinkedList는 연결 리스트를 사용. ArrayDeque는 배열 기반의 원형 큐를 사용한다. 대부분의 경우 ArrayDeque가 빠름
