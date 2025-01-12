@@ -559,3 +559,15 @@ Collection은 Map을 제외한 모든 컬렉션 타입의 부모이다. 모든 �
 + **Set**: HashSet은 해시 테이블, LinkedHashSet은 해시 테이블과 연결 리스트를, TreeSet은 레드-블랙 트리를 사용함
 + **Map**: HashMap은 해시 테이블, LinkedHashMap은 해시 테이블과 연결 리스트를, TreeMap은 레드-블랙 트리를 사용함
 + *Queue**: LinkedList는 연결 리스트를 사용. ArrayDeque는 배열 기반의 원형 큐를 사용한다. 대부분의 경우 ArrayDeque가 빠름
+
+### 선택 가이드
++ **순서가 중요하고 중복이 허용되는 경우**: List를 사용. ArrayList가 일반적인 선택이지만, 추가/삭제 작업이 앞쪽에서 빈번한 경우에는 LinkedList가 성능상 더 좋음
++ **중복을 허용하지 않고 순서가 중요하지 않는 경우**: HashSet을 사용. 순서를 유지해야 한다면 LinkedHashSet을, 정렬된 순서가 필요하면 TreeSet을 사용함
++ **요소를 키-값 쌍으로 저장하려는 경우**: Map 인터페이스를 사용. 순서가 중요하지 않는 경우 HashMap을, 순서를 유지해야 한다면 LinkedHashMap, 정렬된 순서가 필요하면 TreeMap을 사용함
++ **요소를 처리하기 전에 보관해야 하는 경우**: Queue,Deque 사용. 스택, 큐 구조 모두 ArrayDeque를 사용하는 것이 가장 빠름. 만약 우선순위에 따라 요소를 처리해야 하는 경우 PriorityQueue를 고려
+  + PriorityQueue -> 놀이공원 하이패스를 생각해보면 된다.
+### 실무의 경우
++ List의 경우 대부분 ArrayList를 사용
++ Set의 경우 대부분 HashSet을 사용
++ Map의 경우 대부분 HashMap을 사용
++ Queue의 경우 대부분 ArrayDeque를 사용
